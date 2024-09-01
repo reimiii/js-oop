@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Operator instanceof</title>
+</head>
+<body>
+<script>
+
+    class Employee {
+
+    }
+
+    class Manager extends Employee {
+
+    }
+
+    const skr = new Employee();
+    const mee = new Manager();
+
+    console.info(typeof skr);
+    console.info(typeof mee);
+
+    console.info(skr instanceof Employee); // true
+    console.info(skr instanceof Manager); // false
+
+    console.info(mee instanceof Employee); // true
+    console.info(mee instanceof Manager); // true
+
+</script>
+</body>
+</html>
